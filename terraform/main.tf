@@ -28,7 +28,7 @@ resource "aws_instance" "web_server" {
               yum install -y git
               curl -sL https://rpm.nodesource.com/setup_16.x | bash -
               yum install -y nodejs
-              git clone https://github.com/arman226/node-js-aws-terraform.git home/ec2-user/node-js-aws-terraform
+              git clone https://github.com/arman226/node-js-aws-terraform home/ec2-user/node-js-aws-terraform
               cd home/ec2-user/node-js-aws-terraform
               npm install
             EOF
