@@ -1,0 +1,10 @@
+node_modules
+aws-creds
+.terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+*.tfplan.*
+*.tfplan.json

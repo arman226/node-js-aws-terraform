@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-aws-terraform",
+  "version": "1.0.0",
+  "description": "This is a simple implementation of node js deployment with AWS via terraform",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arman226/node-js-aws-terraform.git"
+  },
+  "keywords": [
+    "nodejs",
+    "terraform",
+    "aws",
+    "devops",
+    "infra"
+  ],
+  "author": "Armando I. Bibay Jr.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arman226/node-js-aws-terraform/issues"
+  },
+  "homepage": "https://github.com/arman226/node-js-aws-terraform#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
