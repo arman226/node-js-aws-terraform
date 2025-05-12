@@ -18,8 +18,10 @@ provider "aws" {
 #Creates an EC2 Instance with the name web_server
 
 resource "aws_instance" "web_server" {
-  ami           = "ami-01f5a0b78d6089704" #Amazon Linux 2 AMI
-  instance_type = "t2.micro"
+  ami                    = "ami-01f5a0b78d6089704" #Amazon Linux 2 AMI
+  instance_type          = "t2.micro"
+  vpc_security_group_ids = [aws_security_group.web_sg.id] # <-- ADD THIS LINE
+  key_name               = var.key_name
 
   # User data script for Ubuntu
   user_data = <<-EOF
